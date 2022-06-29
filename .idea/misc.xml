@@ -5,6 +5,14 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.2105978260869565" />
+        <entry key="app/src/main/res/layout/fragment_first_tab.xml" value="0.1828774062816616" />
+        <entry key="app/src/main/res/layout/fragment_first_tab2.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_first_tab_list.xml" value="0.3619791666666667" />
+        <entry key="app/src/main/res/layout/fragment_second_tab.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/fragment_tab_one.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/fragment_tab_three.xml" value="0.19479166666666667" />
+        <entry key="app/src/main/res/layout/fragment_tab_two.xml" value="0.16875" />
+        <entry key="app/src/main/res/layout/item_list.xml" value="0.15572916666666667" />
       </map>
     </option>
   </component>

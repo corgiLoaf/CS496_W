@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_tab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.HelloWorld.AppBarOverlay"/>
+        android:layout_height="wrap_content">
 
-    <include layout="@layout/content_main" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/contactsList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab1" />
 
-    <TextView
-        android:id="@+id/textView"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/imageGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab2" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab3" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:alpha="100"
-        android:background="#FFFFFF"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:text="@string/hello_world"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:visibility="visible" />
+        android:layout_height="match_parent" >
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:alpha="100"
+            android:background="#FFFFFF"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="@string/hello_world"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible" />
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
